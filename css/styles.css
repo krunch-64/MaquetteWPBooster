@@ -1,0 +1,50 @@
+.GrandR{
+    position: absolute;
+    width: 954.17px;
+    height: 380px;
+    background-color: red;
+    left:calc(-135%) ;
+    top: 25%;
+}
+
+.fond {
+    width:1922px;
+    height:563px;
+    background-color:#BFDBFF;
+    position:fixed;
+}
+
+.background .title{
+    position:absolute;
+    color:#000A64;
+    top: 7%;
+    left:calc(50%)
+}
+
+.nuage_0 {
+    position: absolute;
+    -webkit-animation: translate 10s linear infinite;
+    animation: translate 10s linear infinite;
+
+}
+
+@-webkit-keyframes translate {
+    0% {
+      -webkit-transform: translate(0px);
+              transform: translate(0px);
+    }
+    100% {
+      -webkit-transform: translate(360px );
+              transform: translate(360px );
+    }
+  }
+  @keyframes translate {
+    0% {
+      -webkit-transform: translate(0px);
+              transform: translate(0px);
+    }
+    100% {
+      -webkit-transform: translate(360px);
+              transform: translate(360px);
+    }
+  }
