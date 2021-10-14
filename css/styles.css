@@ -1,20 +1,19 @@
-.GrandR{
+.rectangle {
   display:block;
   block-size: 954.17px 380px;
     position: absolute;
     width: 954.17px;
     height: 380px;
-    left:-550%;
-    top: 25%;
+   left: 100px;
 }
 
-.rectangle-bronze , .bronze{
+.rectangle-bronze  {
   width: 318px;
   height: 380px;
   position: absolute;
-  background-color: white;
+  background-color:white;
   left:calc(50% - 0) ;
-  top:calc(50% - 190px);
+  top:calc(50% - 100px);
 }
 
 .bronze {
@@ -30,6 +29,21 @@
   color: white;
   font-weight: bold;
   font-size:16px;
+}
+
+.rectangle-argent  {
+  width: 318px;
+  height: 380px;
+  position: absolute;
+  background-color:white;
+  left:calc(50% - 00px) ;
+  top:calc(50% - 100px);
+}
+
+.argent {
+  width: 318px;
+  height: 50px;
+  background-color:#BBC6CE;
 }
 
 .fond {
@@ -61,10 +75,6 @@
               transform: translate(0px);
     }
 
-    25% {
-      top: 1px;
-      top: 1px;
-    }
     100% {
       -webkit-transform: translate(400% );
               transform: translate(400% );
@@ -75,10 +85,7 @@
       -webkit-transform: translate(0px);
               transform: translate(0px);
     }
-    25% {
-      top: 1px;
-      top: 1px;
-    }
+
     100% {
       -webkit-transform: translate(400%);
               transform: translate(400%);
