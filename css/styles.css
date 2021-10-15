@@ -4,6 +4,7 @@
     width: 954.17px;
     height: 380px;
    left: 100px;
+   justify-items: center;
 }
 
 .rectangle-bronze  {
@@ -37,8 +38,8 @@
   height: 380px;
   position: absolute;
   background-color:white;
-  left:calc(50% - 00px) ;
-  top:calc(50% - 100px);
+  right:calc(50% - 477px) ;
+  top:calc(50% - 190px);
 }
 
 .argent {
@@ -53,8 +54,8 @@
     height: 380px;
     position: absolute;
     background-color:white;
-    left:calc(50% - 00px) ;
-    top:calc(50% - 100px);
+    right:calc(50% - 477px) ;
+    top:calc(50% - 190px);
 }
 
 .or {
