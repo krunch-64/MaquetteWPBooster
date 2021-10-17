@@ -1,26 +1,90 @@
-.rectangle {
-    display:grid;
-    position: absolute;
-    width: 954.17px;
-    height: 380px;
-   left: 100px;
-   justify-items: center;
+/*--background--*/
+
+.fond {
+  width:1922px;
+  height:563px;
+  background-color:#BFDBFF;
+  position:fixed;
 }
 
-.rectangle-bronze  {
+.title {
+  position:absolute;
+  color:#000A64;
+  top: 5%;
+  left:calc(50%);
+}
+
+/*------------------------------------------------------*/
+/*--rectangle principal et text --*/
+.rectangle-container {
+  display: grid;
+  width: 956px;
+  height: 378px;
+  gap: 1;
+  position: absolute;
+  background-color:white;
+  grid-template-rows: 380px;
+  grid-template-columns: repeat(3, 318px);
+  left:calc(50% - 33em) ;
+  top:calc(50% - 15em);
+  grid-template-areas: 
+  "rectangle-bronze rectangle-argent rectangle-or";
+}
+
+/*------------------------------------------------------*/
+/*--rectangle bronze-argent-or--*/
+.rectangle-bronze {
+  grid-area: rectangle-bronze;
   display: flex;
   width: 318px;
   height: 380px;
   position: absolute;
   background-color:white;
-  left:calc(50% - 0) ;
-  top:calc(50% - 100px);
+  align-items: top;
+  justify-content: top;
 }
+
+.rectangle-argent  {
+  grid-area: rectangle-argent;
+  display: flex;
+  width: 318px;
+  height: 380px;
+  position: absolute;
+  background-color:white;
+  align-items: top;
+  justify-content: top;
+}
+
+.rectangle-or {
+ grid-area: rectangle-or;
+  width: 318px;
+  height: 380px;
+  background-color: white;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+  transition: 1.5s;
+  transform: rotatex(10deg);
+}
+/*------------------------------------------------------*/
+/*--baniere des rectangle--*/
 
 .bronze {
   width: 318px;
   height: 50px;
   background-color:#d49a4e;
+}
+
+.argent {
+  width: 318px;
+  height: 50px;
+  background-color:#BBC6CE;
+}
+
+.or {
+  width: 318px;
+  height: 50px;
+  background-color:#DCD388;
 }
 
 .text {
@@ -32,51 +96,8 @@
   font-size:16px;
 }
 
-.rectangle-argent  {
-  display: flex;
-  width: 318px;
-  height: 380px;
-  position: absolute;
-  background-color:white;
-  right:calc(50% - 477px) ;
-  top:calc(50% - 190px);
-}
-
-.argent {
-  width: 318px;
-  height: 50px;
-  background-color:#BBC6CE;
-}
-
-.rectangle-or {
-    display: flex;
-    width: 318px;
-    height: 380px;
-    position: absolute;
-    background-color:white;
-    right:calc(50% - 477px) ;
-    top:calc(50% - 190px);
-}
-
-.or {
-  width: 318px;
-  height: 50px;
-  background-color:#DCD388;
-}
-
-.fond {
-    width:1922px;
-    height:563px;
-    background-color:#BFDBFF;
-    position:fixed;
-}
-
-.title {
-    position:absolute;
-    color:#000A64;
-    top: 5%;
-    left:calc(50%);
-}
+/*------------------------------------------------------*/
+/*--background animation--*/
 
 .nuage_0 {
   zoom:0.8;
