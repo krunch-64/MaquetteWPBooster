@@ -15,8 +15,12 @@
 }
 
 /*------------------------------------------------------*/
+/*--container--*/
+
+
+/*------------------------------------------------------*/
 /*--rectangle principal et text --*/
-.rectangle-container {
+.rectangle {
   display: grid;
   width: 956px;
   height: 378px;
@@ -60,11 +64,10 @@
   width: 318px;
   height: 380px;
   background-color: white;
+  position: absolute;
   display: flex;
   align-items: top;
   justify-content: top;
-  transition: 1.5s;
-  transform: rotatex(10deg);
 }
 /*------------------------------------------------------*/
 /*--baniere des rectangle--*/
@@ -130,3 +133,5 @@
               transform: translate(400%);
     }
   }
+
+  /*------------------------------------------------------*/
