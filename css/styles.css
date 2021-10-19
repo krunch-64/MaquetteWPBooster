@@ -20,115 +20,75 @@
 
 /*------------------------------------------------------*/
 /*--rectangle principal et text --*/
-.rectangle {
+.rectangle-container {
   display: grid;
   width: 956px;
   height: 378px;
-  gap: 1px;
+  gap: 1;
   position: absolute;
-  background-color:transparent;
+  background-color:white;
   grid-template-rows: 380px;
   grid-template-columns: repeat(3, 318px);
   left:calc(50% - 33em) ;
   top:calc(50% - 15em);
   grid-template-areas: 
   "rectangle-bronze rectangle-argent rectangle-or";
-  align-items: center;
-  justify-content: center;
 }
 
 /*------------------------------------------------------*/
 /*--rectangle bronze-argent-or--*/
 .rectangle-bronze {
   grid-area: rectangle-bronze;
-  display: grid;
+  display: flex;
   width: 318px;
   height: 380px;
   position: absolute;
   background-color:white;
   align-items: top;
   justify-content: top;
-  grid-template-columns: 40px 1fr 1fr 40px;
-  grid-template-rows: 50px 60px 60px 100px 1fr;
-  grid-template-areas: 
-  "bronze bronze bronze bronze"
-        ". . . ."
-        ". prix prix ."
-        ". slogan slogan ."
-        ". button button ." ;
 }
 
 .rectangle-argent  {
   grid-area: rectangle-argent;
-  display: grid;
+  display: flex;
   width: 318px;
   height: 380px;
   position: absolute;
   background-color:white;
   align-items: top;
   justify-content: top;
-  grid-template-columns: 40px 1fr 1fr 40px;
-  grid-template-rows: 50px 60px 60px 100px 1fr;
-  grid-template-areas: 
-  "argent argent argent argent "
-        ". . . ."
-        ". prix prix ."
-        ". slogan slogan ."
-        ". button button ." ;
 }
 
 .rectangle-or {
  grid-area: rectangle-or;
   width: 318px;
   height: 380px;
-  position: absolute;
   background-color: white;
-  display: grid;
+  display: flex;
   align-items: top;
   justify-content: top;
-  grid-template-columns: 40px 1fr 1fr 40px;
-  grid-template-rows: 50px 60px 60px 100px 1fr;
-  grid-template-areas: 
-        "or or or or"
-        ". . . ."
-        ". prix prix ."
-        ". slogan slogan ."
-        ". button button ." ;
+  transition: 1.5s;
+  transform: rotatex(10deg);
 }
 /*------------------------------------------------------*/
 /*--baniere des rectangle--*/
 
 .bronze {
-  grid-area: bronze;
-  position: absolute;
-  display: flex;
   width: 318px;
   height: 50px;
   background-color:#d49a4e;
-  align-items: center;
-  justify-content: center;
 }
 
 .argent {
-  position: absolute;
-  display: flex;
-  grid-area: argent;
   width: 318px;
   height: 50px;
   background-color:#BBC6CE;
-  align-items: center;
-  justify-content: center;
 }
 
 .or {
-  position: absolute;
-  display: flex;
-  grid-area: or;
   width: 318px;
   height: 50px;
   background-color:#DCD388;
-  align-items: center;
-  justify-content: center;
 }
 
 .text {
@@ -138,24 +98,6 @@
   color: white;
   font-weight: bold;
   font-size:16px;
-}
-
-/*------------------------------------------------------*/
-/*--Animation zoom*/
-.rec {
-  transition: all 400ms ease-in-out;
-  transform: rotateX(10deg);
-}
-
-.rec:hover {
-  transform: rotateX(10deg) scale(1.1);
-  z-index: 1;
-  box-shadow: 1px 5px 5px rgb(0,0,0,0.16);
-  background-color: white;
-}
-
-.rec:hover .prix {
-  color: rgba(255,0,0, 0.6);
 }
 
 /*------------------------------------------------------*/
@@ -192,4 +134,7 @@
               transform: translate(400%);
     }
   }
+<<<<<<< HEAD
 /*------------------------------------------------------*/
+=======
+>>>>>>> parent of 70ac443 (modification)
